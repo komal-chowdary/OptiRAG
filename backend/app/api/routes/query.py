@@ -1,4 +1,4 @@
-
+﻿
 import logging
 from typing import Literal
 
@@ -13,14 +13,25 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(tags=["Query"])
 
-# Initialize the services once through RAGService.
 rag_service = RAGService()
 
-query_service = rag_service.retrieval_services["basic_vector"]
-semantic_query_service = rag_service.retrieval_services["semantic_vector"]
-hybrid_query_service = rag_service.retrieval_services["hybrid"]
-reranked_query_service = rag_service.retrieval_services["hybrid_reranked"]
-answer_generator = rag_service.answer_generator
+
+class LazyRetrievalService:
+    """Resolve a retrieval service only when a request uses it."""
+
+    def __init__(self, strategy: str):
+        self.strategy = strategy
+
+    def search(self, question: str, top_k: int = 5):
+        service = rag_service._get_retrieval_service(self.strategy)
+        return service.search(question=question, top_k=top_k)
+
+
+# Preserve module-level service names for API compatibility and testing.
+query_service = LazyRetrievalService("basic_vector")
+semantic_query_service = LazyRetrievalService("semantic_vector")
+hybrid_query_service = LazyRetrievalService("hybrid")
+reranked_query_service = LazyRetrievalService("hybrid_reranked")
 
 
 class QueryRequest(BaseModel):
@@ -87,19 +98,6 @@ def answer_question(request: QueryRequest):
     return {
         "question": result["question"],
         "retrieval_strategy": "basic_vector",
-        "result_count": result["result_count"],
-        "answer": result["answer"],
-        "citations": result["citations"],
-        "model": result["model"],
-    }
-
-    # Preserve the original response structure.
-    return {
-        "question": result["question"],
-        "retrieval_strategy": query_service.search(
-            question=request.question,
-            top_k=request.top_k,
-        )["retrieval_strategy"],
         "result_count": result["result_count"],
         "answer": result["answer"],
         "citations": result["citations"],

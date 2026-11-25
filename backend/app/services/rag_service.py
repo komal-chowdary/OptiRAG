@@ -1,5 +1,4 @@
-
-import logging
+﻿import logging
 
 from app.core.exceptions import (
     OptiRAGError,
@@ -12,7 +11,6 @@ from app.services.semantic_query_service import SemanticQueryService
 from app.services.hybrid_query_service import HybridQueryService
 from app.services.reranked_query_service import RerankedQueryService
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -21,21 +19,41 @@ class RAGService:
 
     def __init__(self):
         self.answer_generator = AnswerGenerator()
+        self.retrieval_services = {}
 
-        # Initialize the hybrid service only once.
-        self.hybrid_query_service = HybridQueryService()
+    def _get_retrieval_service(self, strategy: str):
+        """Initialize and cache a retrieval service when first requested."""
 
-        # Reuse its HybridRetriever for reranked retrieval.
-        self.reranked_query_service = RerankedQueryService(
-            hybrid_retriever=self.hybrid_query_service.retriever
-        )
+        if strategy in self.retrieval_services:
+            return self.retrieval_services[strategy]
 
-        self.retrieval_services = {
-            "basic_vector": QueryService(),
-            "semantic_vector": SemanticQueryService(),
-            "hybrid": self.hybrid_query_service,
-            "hybrid_reranked": self.reranked_query_service,
-        }
+        if strategy == "basic_vector":
+            service = QueryService()
+
+        elif strategy == "semantic_vector":
+            service = SemanticQueryService()
+
+        elif strategy == "hybrid":
+            service = HybridQueryService()
+
+        elif strategy == "hybrid_reranked":
+            hybrid_service = self.retrieval_services.get("hybrid")
+
+            if hybrid_service is None:
+                hybrid_service = HybridQueryService()
+                self.retrieval_services["hybrid"] = hybrid_service
+
+            service = RerankedQueryService(
+                hybrid_retriever=hybrid_service.retriever
+            )
+
+        else:
+            raise ValueError(
+                f"Unsupported retrieval strategy: {strategy}"
+            )
+
+        self.retrieval_services[strategy] = service
+        return service
 
     def answer_question(
         self,
@@ -47,7 +65,14 @@ class RAGService:
         if not question or not question.strip():
             raise ValueError("Question cannot be empty.")
 
-        if strategy not in self.retrieval_services:
+        supported_strategies = {
+            "basic_vector",
+            "semantic_vector",
+            "hybrid",
+            "hybrid_reranked",
+        }
+
+        if strategy not in supported_strategies:
             raise ValueError(
                 f"Unsupported retrieval strategy: {strategy}"
             )
@@ -55,9 +80,9 @@ class RAGService:
         if not isinstance(top_k, int) or not 1 <= top_k <= 20:
             raise ValueError("top_k must be between 1 and 20.")
 
-        retrieval_service = self.retrieval_services[strategy]
-
         try:
+            retrieval_service = self._get_retrieval_service(strategy)
+
             retrieval = retrieval_service.search(
                 question=question,
                 top_k=top_k,
@@ -77,10 +102,8 @@ class RAGService:
 
         except ValueError:
             raise
-
         except OptiRAGError:
             raise
-
         except Exception as exc:
             logger.exception(
                 "Retrieval failed for strategy '%s'.",
@@ -96,10 +119,8 @@ class RAGService:
 
         except ValueError:
             raise
-
         except GenerationError:
             raise
-
         except Exception as exc:
             logger.exception(
                 "Unexpected generation failure for strategy '%s'.",
