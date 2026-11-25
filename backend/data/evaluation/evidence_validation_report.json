@@ -1,0 +1,661 @@
+{
+  "total_questions": 50,
+  "answerable_questions": 40,
+  "evidence_variants_checked": 57,
+  "evidence_variants_found": 57,
+  "evidence_variants_missing": 0,
+  "missing_source_files": 0,
+  "empty_evidence_quotes": 0,
+  "quote_validation_results": [
+    {
+      "question_id": "G001",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Azure Queue Storage is a service for storing large numbers of messages",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\queues\\storage-powershell-how-to-use-queues.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\queues\\storage-queues-introduction.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\queues\\storage-quickstart-queues-dotnet.md"
+      ],
+      "candidate_file_count": 3
+    },
+    {
+      "question_id": "G002",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "providing a key/attribute store with a schemaless design",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-introduction.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\tables\\table-storage-overview.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G003",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Elastic SAN is a fully integrated solution that simplifies deploying, scaling, managing, and configuring a storage area network",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\elastic-san\\elastic-san-introduction.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G004",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "automatically maintain previous versions of an object",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\lifecycle-management-policy-access-tiers.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\lifecycle-management-policy-delete.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\versioning-overview.md"
+      ],
+      "candidate_file_count": 3
+    },
+    {
+      "question_id": "G005",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "decreases the amount of local storage required while keeping the performance of an on-premises file server",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\file-sync\\file-sync-cloud-tiering-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G006",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "A container organizes a set of blobs, similar to a directory in a file system",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\blob-containers-portal.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-object-model.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blobs-introduction.md"
+      ],
+      "candidate_file_count": 3
+    },
+    {
+      "question_id": "G007",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "A container-level write once, read many (WORM) policy is a type of immutability policy",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\immutable-container-level-worm-policies.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G008",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "AzCopy is a command-line utility that you can use to copy data to, from, or between storage accounts",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-migration-tools.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-use-azcopy-v10.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G009",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Restore a set of block blobs to a previous point in time",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\data-protection-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G010",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Block blobs store text and binary data",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-object-model.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blobs-introduction.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G010",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "Append blobs are made up of blocks like block blobs",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-append.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-object-model.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blobs-introduction.md"
+      ],
+      "candidate_file_count": 3
+    },
+    {
+      "question_id": "G010",
+      "evidence_index": 2,
+      "variant_index": 0,
+      "quote": "Page blobs store random access files up to 8 TiB in size",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-object-model.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blobs-introduction.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G011",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Append blobs are ideal for scenarios such as logging data from virtual machines",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-append.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-object-model.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blobs-introduction.md"
+      ],
+      "candidate_file_count": 3
+    },
+    {
+      "question_id": "G012",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Block blobs can store up to about 190.7 TiB",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-object-model.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blobs-introduction.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G013",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "A queue message can be up to 64 KB in size",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\queues\\storage-queues-introduction.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\queues\\storage-quickstart-queues-dotnet.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G014",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "specify a retention period for deleted objects between 1 and 365 days",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\soft-delete-blob-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G015",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Data in the archive tier can take up to 15 hours to rehydrate",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\archive-blob.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G016",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "uses 256-bit AES Galois/Counter Mode",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-service-encryption.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G017",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "You can't disable Azure Storage encryption",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-service-encryption.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G018",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Data in the archive tier should be stored for a minimum of 180 days",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G019",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "A blob storage container named $web is created for you within the storage account",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-static-website.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G019",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "Add your website's files to the $web container to make them accessible through the static website's primary endpoint",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-blob-static-website.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G020",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "When combined with NFS 3.0 protocol support, Azure makes it much easier to run legacy applications",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\network-file-system-protocol-support.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G021",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Hot tier - An online tier optimized for storing data that is accessed or modified frequently",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G021",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "Archive tier - An offline tier optimized for storing data that is rarely accessed",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G022",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "The hot tier has the highest storage costs, but the lowest access costs",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G022",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "Cool tier - An online tier optimized for storing data that is infrequently accessed or modified",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G022",
+      "evidence_index": 2,
+      "variant_index": 0,
+      "quote": "Data in the cool tier should be stored for a minimum of 30 days",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G022",
+      "evidence_index": 3,
+      "variant_index": 0,
+      "quote": "The cool tier has lower storage costs and higher access costs compared to the hot tier",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G023",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Data in the cool tier should be stored for a minimum of 30 days",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G023",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "Data in the cold tier should be stored for a minimum of 90 days",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G023",
+      "evidence_index": 2,
+      "variant_index": 0,
+      "quote": "Data in the archive tier should be stored for a minimum of 180 days",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G024",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Archive tier - An offline tier optimized for storing data that is rarely accessed",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G024",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "Data in the archive tier can take up to 15 hours to rehydrate",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\archive-blob.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G025",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Locally redundant storage (LRS) replicates the data within your storage accounts to a single physical datacenter",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-redundancy.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G025",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "Zone-redundant storage (ZRS) copies your data synchronously across three or more Azure availability zones",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-redundancy.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G026",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Unlike network security groups that operate at Layer 4, Azure Firewall inspects traffic at Layers 3 through 7",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\networking\\design-guide\\azure-firewall.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G027",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "fully qualified domain name (FQDN) filtering, threat intelligence, intrusion detection and prevention (IDPS), and TLS inspection",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\networking\\design-guide\\azure-firewall.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G028",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Each rule has properties of protocol, source and destination port ranges, address prefixes, direction of traffic, priority, and access type",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\networking\\azure-for-network-engineers.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G029",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "The priority for a rule must be unique within each set",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\networking\\azure-for-network-engineers.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G030",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "On the Advanced tab, under Blob storage, set the Access tier to either Hot, Cool or Cold",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-online-manage.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G031",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "To upload a blob or set of blobs to a specific tier from the Azure portal, follow these steps",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-online-manage.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G031",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "Navigate to the target container. 2. Select the Upload button. 3. Select the file or files to upload. 4. Expand the Advanced section, and set the Access tier to Hot or Cool. 5. Select the Upload button",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-online-manage.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G032",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "To create a container in the Azure portal, follow these steps",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-quickstart-blobs-portal.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G032",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "scroll to the Data storage section, then select Containers",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-quickstart-blobs-portal.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G032",
+      "evidence_index": 2,
+      "variant_index": 0,
+      "quote": "Select the + Container button",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\blob-containers-portal.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-quickstart-blobs-portal.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G032",
+      "evidence_index": 3,
+      "variant_index": 0,
+      "quote": "The container name must be lowercase, must start with a letter or number, and can include only letters, numbers, and the dash (-) character",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\blob-containers-portal.md",
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\storage-quickstart-blobs-portal.md"
+      ],
+      "candidate_file_count": 2
+    },
+    {
+      "question_id": "G033",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "The setting to enable or disable blob soft delete when you create a new storage account is on the Data protection tab",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\soft-delete-blob-enable.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G034",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Azure Firewall is a managed, cloud-native network security service that provides centralized traffic inspection and filtering for your Azure virtual networks",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\networking\\design-guide\\azure-firewall.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G035",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Azure Files provides fully managed file shares in the cloud that you can access through the industry-standard",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\files\\storage-files-introduction.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G036",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Blob versioning, soft delete, and change feed (required prerequisites)",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\point-in-time-restore-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G037",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "ExpressRoute provides a private path, but it doesn't encrypt traffic at the network layer by default",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\networking\\design-guide\\hybrid-connectivity.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G038",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Blobs are subject to an early deletion penalty if they are deleted, overwritten or moved to a different tier before the minimum number of days required by the tier have transpired",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-overview.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G039",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Select the blob, then select the Change tier button",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\blobs\\access-tiers-online-manage.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G040",
+      "evidence_index": 0,
+      "variant_index": 0,
+      "quote": "Geo-redundant storage (GRS) copies your data synchronously within one or more Azure availability zones in the primary region by using LRS",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-redundancy.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G040",
+      "evidence_index": 0,
+      "variant_index": 1,
+      "quote": "Geo-redundant storage (GRS) copies your data synchronously to one or more availability zones in the primary region by using LRS",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-redundancy.md"
+      ],
+      "candidate_file_count": 1
+    },
+    {
+      "question_id": "G040",
+      "evidence_index": 1,
+      "variant_index": 0,
+      "quote": "It then copies your data asynchronously to the secondary region. Within the secondary region, your data is copied synchronously by using LRS",
+      "quote_found": true,
+      "matched_files": [
+        "D:\\OptiRAG\\backend\\data\\raw\\microsoft_docs\\storage\\common\\storage-redundancy.md"
+      ],
+      "candidate_file_count": 1
+    }
+  ],
+  "missing_quotes": [],
+  "missing_files": [],
+  "empty_quotes": []
+}

@@ -1,0 +1,14 @@
+
+fastapi
+uvicorn[standard]
+pydantic-settings
+python-dotenv
+beautifulsoup4
+pymupdf
+pytest
+sentence-transformers
+chromadb
+ollama
+rank-bm25
+PyYAML
+requests

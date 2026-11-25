@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Frontend
+node_modules/
+dist/
+coverage/
+
+# Data and generated indexes
+backend/data/raw/
+backend/data/processed/
+backend/storage/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Accidental empty files
+backend/app/api/sri
+backend/app/ingestion/__intit__.py
+
+# Evaluation: exclude everything by default
+backend/data/evaluation/*
+
+# Preserve benchmark and validation artifacts
+!backend/data/evaluation/retrieval_evaluation_summary.json
+!backend/data/evaluation/retrieval_evaluation_details.csv
+!backend/data/evaluation/retrieval_evaluation_details.jsonl
+!backend/data/evaluation/document_id_mapping_report.json
+!backend/data/evaluation/evidence_validation_report.json
+!backend/data/evaluation/golden_dataset.jsonl

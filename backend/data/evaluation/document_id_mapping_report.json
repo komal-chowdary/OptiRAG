@@ -1,0 +1,140 @@
+{
+  "total_golden_ids": 33,
+  "mapped_count": 33,
+  "unmatched_count": 0,
+  "mappings": {
+    "00997f1b-d246-44ae-ac60-831e1981e01a": {
+      "relative_path": "storage/blobs/soft-delete-blob-enable.md",
+      "new_document_id": "3822b08d73407e20c32b9f7bc2eeb6e977163797e17b5876b9361a60b4e71087"
+    },
+    "00b06cc2-2755-406d-9a29-140add34227b": {
+      "relative_path": "storage/blobs/versioning-overview.md",
+      "new_document_id": "5a8cf8cb9012698ec0ff6b09fcd9b75213df0d0afc7018c2b6629127d94a391e"
+    },
+    "06ce77c5-4c8b-4fe6-b4be-051542b88dba": {
+      "relative_path": "storage/queues/storage-queues-introduction.md",
+      "new_document_id": "bb8929f1d810d5747146cc3b9de02c6b7629e795ff7f3de745a42eb29de95c1f"
+    },
+    "10eded47-ac40-4e87-ae6f-3a4b45a45e9c": {
+      "relative_path": "storage/blobs/storage-blob-append.md",
+      "new_document_id": "e17f5916da41eb1f22d5ee3f2a67a624415e5d0aea46238f0aedf2ed82252075"
+    },
+    "16aeccb1-7f2e-4601-ac00-322d8ab1d12b": {
+      "relative_path": "storage/blobs/access-tiers-overview.md",
+      "new_document_id": "1847dd99896fd61ee0a8d346b8ce99db7e31a97514b6fc1b54b8f21cb0ea57c0"
+    },
+    "324e7291-12a6-495b-b9f9-56c9a06a787f": {
+      "relative_path": "storage/blobs/archive-blob.md",
+      "new_document_id": "115a71947ff28b3635460f996714a26d113d81f72be8c70b078ddc0a4efc4988"
+    },
+    "3e29fbaa-d6cd-4e28-93cd-c96e7bb78a73": {
+      "relative_path": "storage/common/storage-redundancy.md",
+      "new_document_id": "53f2e9be5f6ebd77bcab05061bc4d3c926bf234f801c0255d91d557cffc4c8b6"
+    },
+    "40d41a00-a3b6-4020-83fa-dc9fd92df8c3": {
+      "relative_path": "storage/elastic-san/elastic-san-introduction.md",
+      "new_document_id": "74c7e3a57cd083471fcf36354d4037df4525baf47acbc06dc74c060d50a76cf4"
+    },
+    "41714f81-9473-4815-8791-ac54458abb56": {
+      "relative_path": "storage/common/storage-use-azcopy-v10.md",
+      "new_document_id": "2c7d3235ea105c28c9cc26ad7a81a520bc58168fb4e6b23b6e342e96814f3949"
+    },
+    "4a218179-1edb-4e94-b010-4cc315204e6b": {
+      "relative_path": "storage/common/storage-introduction.md",
+      "new_document_id": "f4f9113850dbb526e2b6a8bdb5f0e9c5af94b313ce05bf1713256acb7886d9a3"
+    },
+    "594c333c-bc91-49ea-9059-26afdc470d38": {
+      "relative_path": "storage/file-sync/file-sync-cloud-tiering-overview.md",
+      "new_document_id": "818edb5e8fe1601c0227561e302be433638d7e8be8b54896dd724d33ad9168cc"
+    },
+    "6261b67c-000a-427e-91f2-cf9fcca8143c": {
+      "relative_path": "storage/blobs/data-protection-overview.md",
+      "new_document_id": "f28e5652d95b715de4f121810e55db4810fb3e7f870c09e8cf7d1f87f4ed6695"
+    },
+    "7032f372-2965-46d6-acca-fcb23959d2ef": {
+      "relative_path": "storage/blobs/storage-blobs-introduction.md",
+      "new_document_id": "a51a6e57afd8d101dbfeca1d067a7c3db948defa18c2b82c4402409d297fa1d8"
+    },
+    "86613145-4cff-4c25-b9ad-dd54bae5b0a7": {
+      "relative_path": "storage/tables/table-storage-overview.md",
+      "new_document_id": "317785ad5c9f5eda70da5f4891385b69121435b9338c4cd0f4bf1928ef7c78a0"
+    },
+    "a667bb89-9a77-4a67-8fdf-3017b66da3f9": {
+      "relative_path": "storage/blobs/network-file-system-protocol-support.md",
+      "new_document_id": "69b72191ae7541cfdd6d9c8487bee5bd97cd04eb059b0a669610daaf10aca77b"
+    },
+    "aa85c34c-b1e5-42c1-bcfa-a8494703e277": {
+      "relative_path": "storage/blobs/lifecycle-management-policy-delete.md",
+      "new_document_id": "fcdc1c7185d5c40a6be726a0777a54f19b2d8dd0ab57162c7a705a47304444b2"
+    },
+    "b8b55505-3ecf-47b5-a38f-4f1820c2dcb6": {
+      "relative_path": "storage/common/storage-service-encryption.md",
+      "new_document_id": "d17b85998bacf6107139c6d6d78c66118b37d13d8c5a537524c9a29d45b97225"
+    },
+    "be5e1e65-7f7f-4f44-984c-782cf69aa726": {
+      "relative_path": "storage/queues/storage-powershell-how-to-use-queues.md",
+      "new_document_id": "079a1011a5ef786552c806cd58c3782c7c4087e202ccde8ce183e873a70374b2"
+    },
+    "c2da06ec-6333-4aea-9834-ba95cd75a885": {
+      "relative_path": "storage/blobs/access-tiers-online-manage.md",
+      "new_document_id": "c57b7474e082540820214d4da7cec3a8f76bfa009b10815ffe419805b7894d81"
+    },
+    "c5da843e-2005-405f-9053-3afdd5e33587": {
+      "relative_path": "storage/blobs/blob-containers-portal.md",
+      "new_document_id": "8e72d66eb2d06030dbaf01704b5c90c54f853535d35c9e5d1fb827ddebba8cd9"
+    },
+    "cf400292-9854-4b53-a7d7-60cceec0eafd": {
+      "relative_path": "storage/queues/storage-quickstart-queues-dotnet.md",
+      "new_document_id": "69460eea08ce51a36448aca5167a4af742e97f3ac4d17b52bac083b2137ab62b"
+    },
+    "d0ad61ac-7ed4-4c3a-9405-c10fc7f6e105": {
+      "relative_path": "networking/design-guide/azure-firewall.md",
+      "new_document_id": "7c33a3e3ab3a194a31acac9f46a704882fd52ca37216b7085857fd21f3bdd405"
+    },
+    "d6984166-6804-492e-9b4c-c57eafc1ca83": {
+      "relative_path": "storage/blobs/storage-blob-object-model.md",
+      "new_document_id": "1cd8232a77fa92e1692b68345323b1bfc196708787298487417604218afa4a19"
+    },
+    "d6b0430f-013d-46b1-b9e6-0d5cc2570758": {
+      "relative_path": "storage/common/storage-migration-tools.md",
+      "new_document_id": "00c26600eac07815c961afcf2b1491bb02d6ca1fc7fb7714beff931b058b2a0f"
+    },
+    "e00bd021-6650-49d3-818f-0463291009d2": {
+      "relative_path": "storage/blobs/immutable-container-level-worm-policies.md",
+      "new_document_id": "457372697c610c4a0aa573fa482cf7e606af253dee95b96bdaac4200f3224936"
+    },
+    "e04ae78d-9751-416e-adf3-8c207a01d272": {
+      "relative_path": "storage/blobs/storage-blob-static-website.md",
+      "new_document_id": "b1a02d7057e09d55d0ea69cf3ea647dc817ca3f23b6b36acfead6e10be5b504a"
+    },
+    "e978fa23-0d2a-47cb-ad68-8667916f71fb": {
+      "relative_path": "networking/design-guide/hybrid-connectivity.md",
+      "new_document_id": "d56b4d9370cc33c13f5b3280ac3f797516ccd753d5eff6ce2841b269b2822868"
+    },
+    "eb5bc0a6-3ef1-44bc-9d45-ffd01350baf3": {
+      "relative_path": "storage/blobs/storage-quickstart-blobs-portal.md",
+      "new_document_id": "73aa5ceea0afa39dbaf4cba547a6c241fe8d5f8f55010ac64b77a156ab989e76"
+    },
+    "ef593f0a-cf06-4d25-9b23-23a6d1b3ee45": {
+      "relative_path": "storage/blobs/soft-delete-blob-overview.md",
+      "new_document_id": "9331bde3f9780341c5623de655d30a82cebde675e6ce593e05ae00a693180862"
+    },
+    "f194b059-8fb8-4eff-ae34-a79d2155c8d9": {
+      "relative_path": "storage/blobs/point-in-time-restore-overview.md",
+      "new_document_id": "2ad49824060af72b4e18c3c1309e7ad3a4a5bc969af0eea27e270dba98a2a1ab"
+    },
+    "f92bebac-6c49-4353-adb0-03a959d4082e": {
+      "relative_path": "storage/blobs/lifecycle-management-policy-access-tiers.md",
+      "new_document_id": "5508318d957bb15138a65463d0196270a97f53bcd82e6b83e92493c5ad1bff59"
+    },
+    "fab9a868-1477-47c0-b8af-d344f3401422": {
+      "relative_path": "storage/files/storage-files-introduction.md",
+      "new_document_id": "fb83a6f4a208c7c181b8c518b7ac591bb39bcb3c23bb78918e1679efcb8ec5b5"
+    },
+    "ffebc106-2ef4-472b-adfe-0ef166be9081": {
+      "relative_path": "networking/azure-for-network-engineers.md",
+      "new_document_id": "f0857eed830f8a53f69859ea63da280ef1d697e6ff6efa96441dc9218d7d1a07"
+    }
+  },
+  "unmatched_ids": []
+}

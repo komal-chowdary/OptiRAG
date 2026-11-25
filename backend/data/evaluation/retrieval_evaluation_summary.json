@@ -1,0 +1,45 @@
+{
+  "evaluation_cutoff": 5,
+  "answerable_questions": 40,
+  "ranking_unit": "unique_document_id",
+  "strategies": {
+    "basic_vector": {
+      "questions_expected": 40,
+      "questions_evaluated": 40,
+      "complete": true,
+      "hit_rate_at_5": 0.85,
+      "recall_at_5": 0.7375,
+      "mrr_at_5": 0.6320833333333333,
+      "ndcg_at_5": 0.6254410515860547
+    },
+    "semantic_vector": {
+      "questions_expected": 40,
+      "questions_evaluated": 40,
+      "complete": true,
+      "hit_rate_at_5": 0.725,
+      "recall_at_5": 0.6541666666666667,
+      "mrr_at_5": 0.5454166666666667,
+      "ndcg_at_5": 0.5544257492267304
+    },
+    "hybrid": {
+      "questions_expected": 40,
+      "questions_evaluated": 40,
+      "complete": true,
+      "hit_rate_at_5": 0.925,
+      "recall_at_5": 0.8166666666666667,
+      "mrr_at_5": 0.7875,
+      "ndcg_at_5": 0.7434193591706881
+    },
+    "hybrid_reranked": {
+      "questions_expected": 40,
+      "questions_evaluated": 40,
+      "complete": true,
+      "hit_rate_at_5": 0.925,
+      "recall_at_5": 0.8333333333333334,
+      "mrr_at_5": 0.8029166666666667,
+      "ndcg_at_5": 0.7696927924840332
+    }
+  },
+  "errors": [],
+  "overall_complete": true
+}
